@@ -27,7 +27,19 @@ export let currentPage = 1;
 let catImages: Cat[] = getCats() || [];
 let filteredCats: Cat[] = [];
 let isSearching = false;
+const tagFilter = document.querySelector("#tagFilter") as HTMLSelectElement;
 
+function filterImagesByTag(tag: string) {
+  let filteredCats;
+
+  if (tag === "all") {
+    filteredCats = catImages;
+  } else {
+    filteredCats = catImages.filter((cat) => cat.tags.includes(tag));
+  }
+  displayImages(filteredCats, 1);
+  updatePageIndicator(1, Math.ceil(filteredCats.length / itemsPerPage));
+}
 function searchByTag(tag: string) {
   loadingElement.style.display = "block";
 
@@ -57,7 +69,10 @@ searchInput.addEventListener("input", () => {
     updatePageIndicator(1, Math.ceil(catImages.length / itemsPerPage));
   }
 });
-
+tagFilter.addEventListener("change", () => {
+  const selectedTag = tagFilter.value;
+  filterImagesByTag(selectedTag);
+});
 async function fetchCatImages() {
   try {
     loadingElement.style.display = "block";
