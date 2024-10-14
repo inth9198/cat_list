@@ -1,0 +1,44 @@
+<!-- index.html -->
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Cat Gallery</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header>
+      <h1>고양이 리스트</h1>
+      <input
+        type="text"
+        id="searchInput"
+        placeholder="고양이를 검색하세요.(tag)"
+      />
+      <div id="loading" class="loading">
+        <div class="spinner"></div>
+        <p>Loading...</p>
+      </div>
+    </header>
+    <main>
+      <div id="gallery" class="gallery"></div>
+      <div class="pagination">
+        <button id="prevPage">◀</button>
+        <span id="pageIndicator">Page 1 of X</span>
+        <button id="nextPage">▶</button>
+      </div>
+    </main>
+    <div id="modal" class="modal">
+      <div class="modal-content">
+        <span class="close-button">&times;</span>
+        <img src="" alt="Cat Image" class="modal-image" id="modalImage" />
+        <div>
+          <h2 id="modalTitle"></h2>
+          <button id="likeButton">Like</button>
+          <input type="text" id="tagInput" placeholder="태그 입력" />
+        </div>
+      </div>
+    </div>
+    <script type="module" src="/src/main.ts"></script>
+  </body>
+</html>
