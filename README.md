@@ -24,7 +24,9 @@ npm run dev
 고양이 객체의 타입을 관리하는 Cat 변수로 구성이 되어있습니다
 
 ### debounce.ts
-debounce 처리 함수로 구성이 되어있습니다
+debounce 처리 함수로 구성이 되어있습니다</br>
+
+
 ![Oct-14-2024 15-23-47](https://github.com/user-attachments/assets/768c69e9-dd6f-41d3-95f5-dcce2dde34a4)
 
 
