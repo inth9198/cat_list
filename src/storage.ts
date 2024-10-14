@@ -2,23 +2,6 @@ import { Cat } from "./types";
 
 const STORAGE_KEY = "catImages";
 
-export function generateRandomTitle() {
-  const titles = [
-    "장화신은 고양이",
-    "아기 고양이",
-    "검은 고양이",
-    "치즈 고양이",
-    "귀여운 고양이",
-    "화난 고양이",
-    "행복한 고양이",
-    "사나운 고양이",
-    "놀란 고양이",
-    "졸린 고양이",
-    "고양이와 동물",
-  ];
-  return titles[Math.floor(Math.random() * titles.length)];
-}
-
 export function generateRandomLike() {
   return Math.random() > 0.5;
 }

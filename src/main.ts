@@ -2,7 +2,6 @@ import { addTagToCat, closeModal, openModal, removeTagFromCat } from "./modal";
 import {
   getCats,
   addCat,
-  generateRandomTitle,
   generateRandomLike,
   generateRandomTags,
   generateRandomLikeNumber,
