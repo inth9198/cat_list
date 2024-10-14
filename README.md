@@ -25,3 +25,6 @@ npm run dev
 
 ### debounce.ts
 debounce 처리 함수로 구성이 되어있습니다
+![Oct-14-2024 15-23-47](https://github.com/user-attachments/assets/768c69e9-dd6f-41d3-95f5-dcce2dde34a4)
+
+
